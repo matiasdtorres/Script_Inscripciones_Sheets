@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+crossorigin="anonymous">
+  <?!= include('JavaScript'); ?>
+  </head>
+  
+  <body>
+    <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <form id="myForm" onsubmit="handleFormSubmit(this)">
+                        <p class="h4 mb-4 text-center">Detalles de Inscripcion</p>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="Nombre">Nombre</label>
+                                <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Nombre">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="Apellido">Apellido</label>
+                                <input type="text" class="form-control" id="Apellido" name="Apellido" placeholder="Apellido">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="Matricula">Matricula</label>
+                                <input type="text" class="form-control" id="Matricula" name="Matricula">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="Club">Club</label>
+                                <input type="text" class="form-control" id="Club" name="Club">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input type="email" class="form-control" id="Email" name="Email" placeholder="Email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Telefono">Numero de Telefono</label>
+                            <input type="tel" class="form-control" id="Telefono" name="Telefono" placeholder="Numero de Telefono">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                    </form>
+                    <div id="output"></div>
+                </div>
+            </div>      
+        </div>
+  </body>
+</html>
